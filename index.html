@@ -1,12 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name</title>
 </head>
+
 <body>
-  <h1>Your Name</h1>
-  <p>Welcome to my website.</p>
+  <main class="page">
+    <section class="intro">
+      <img class="profile-photo" src="assets/profile/profile-720.jpeg" alt="Portrait of Your Name">
+
+      <div class="intro-text">
+        <h1>Carlo Andreatta</h1>
+
+        <p class="subtitle">
+          PhD Candidate <span class="separator">·</span> New York University
+        </p>
+
+        <p class="tagline">
+          Theory and Experiments
+        </p>
+
+        <p class="contact-line">
+          <svg class="text-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+            <path d="M3 7l9 6 9-6"></path>
+          </svg>
+
+          ca3141@nyu.edu
+        </p>
+
+        <p class="contact-line">
+          <svg class="text-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z"></path>
+            <circle cx="12" cy="10" r="2.5"></circle>
+          </svg>
+
+          19 W 4th St, New York
+        <div class="buttons">
+          <a class="button" href="assets/profile/CV.pdf" target="_blank">
+            <i class="fa-regular fa-file-pdf" aria-hidden="true"></i>
+            <span>Curriculum Vitae</span>
+          </a>
+
+        </div>
+      </div>
+
+
+    </section>
+    <nav class="tabs" aria-label="Page sections">
+      <button type="button" class="tab-button active" data-tab="research">
+        Research
+      </button>
+
+      <button type="button" class="tab-button" data-tab="teaching">
+        Teaching
+      </button>
+
+
+    </nav>
+
+    <section class="tab-panel active" id="research">
+
+      <article class="research-item">
+        <h3 class="paper-title">
+          Social Planning for Hedonistic Altruists
+        </h3>
+
+        <p class="paper-authors">
+          with
+          <a href="https://debrajray.com/" target="_blank" rel="noopener">
+            Debraj Ray
+          </a>
+        </p>
+
+        <p class="paper-status">
+          Working paper
+        </p>
+
+        <div class="paper-actions">
+          <a class="button" href="assets/papers/AndreattaRayHedonistic.pdf" target="_blank" rel="noopener">
+            <i class="fa-regular fa-file-pdf" aria-hidden="true"></i>
+            <span>PDF</span>
+          </a>
+
+          <button type="button" class="button research-toggle">
+            Show abstract
+          </button>
+        </div>
+
+        <div class="research-extra" hidden>
+          <p>
+            We study the welfare consequences of social planning for citizens who display hedonistic altruism towards
+            the next generation. A social planner must effectively be more patient than its citizens, even if
+            <em>every</em> citizen has the same discount factor, but the planner also exhibit time inconsistency and has
+            systematic future bias. We presume that successive generations of planners cannot bind one another to a
+            course of action. Our main result states that every equilibrium policy with positive consumption that is
+            nondecreasing in initial output must be either <em>fully</em> Pareto optimal, or "consumption inefficient"
+            in the sense of Malinvaud (1953) and Phelps (1962, 1965). Moreover, we provide sufficient conditions for
+            either outcome to occur.
+          </p>
+        </div>
+
+      </article>
+
+      <article class="research-item">
+        <h3 class="paper-title">
+          Stochastic Ordering of Random Menus
+        </h3>
+
+        <p class="paper-authors">
+          with
+          <a href="https://sites.google.com/a/nyu.edu/efeok/" target="_blank" rel="noopener">
+            Efe Ok
+          </a>
+        </p>
+
+        <p class="paper-status">
+          Working paper
+        </p>
+
+        <div class="paper-actions">
+          <a class="button" href="assets/papers/AndreattaOkStochastic.pdf" target="_blank" rel="noopener">
+            <i class="fa-regular fa-file-pdf" aria-hidden="true"></i>
+            <span>PDF</span>
+          </a>
+          <button type="button" class="button research-toggle">
+            Show abstract
+          </button>
+        </div>
+
+        <div class="research-extra" hidden>
+          <p>
+            We introduce a notion of first-order stochastic dominance for random feasible sets (= menus) in a suitably
+            ordered alternative space, by using indirect (Bernoulli) utilities. This notion generalizes the classical
+            stochastic ordering of random variables, and enjoys similar characterizations and properties, albeit, now in
+            terms of the Choquet integral instead of the Lebesgue integral. We provide several illustrations that
+            demonstrate how our ordering may be used in economic contexts. In particular, we examine how one may use
+            this ordering to make monotone comparative statics in the context of random budget sets, cores of random
+            cooperative games, choice correspondences on random menus, and ex ante profit maximization. We derive
+            various characterizations and properties of our stochastic ordering.
+          </p>
+        </div>
+
+      </article>
+
+      <article class="research-item">
+        <h3 class="paper-title">
+          Rational Planning and Self Consistency in Decision Problems with Anticipatory Emotions
+        </h3>
+
+
+        <p class="paper-status">
+          Conditionally Accepted at Games and Economic Behavior
+        </p>
+
+        <div class="paper-actions">
+          <a class="button" href="assets/papers/AndreattaPlanning.pdf" target="_blank" rel="noopener">
+            <i class="fa-regular fa-file-pdf" aria-hidden="true"></i>
+            <span>PDF</span>
+          </a>
+
+          <button type="button" class="button research-toggle">
+            Show abstract
+          </button>
+        </div>
+
+        <div class="research-extra" hidden>
+          <p>
+            Belief-dependent preferences capture psychological motivations such as emotions and image concerns. To
+            manage certain emotions, some agents may prefer <em>not</em> to premeditate their behavior, but to remain
+            undecided and act spontaneously. This raises conceptual and analytical challenges. We show that a rational
+            agent never needs to act spontaneously if, at every history, his decision utility does not depend on what he
+            planned to do at past or counterfactual histories. Decision problems with anticipatory emotions are a common
+            class of psychological games where this property holds. To illustrate, we study the effects of savoring and
+            dread on intertemporal choice. We find that behavior with and without commitment only coincides if the
+            agent's emotions are very mild or very intense. Dynamic inconsistency arises for an intermediate range of
+            emotional intensity.
+          </p>
+        </div>
+
+      </article>
+    </section>
+
+    <section class="tab-panel" id="teaching">
+
+      <article class="teaching-item">
+        <h3 class="institution-name">
+          New York University (TA)
+        </h3>
+
+        <ul class="course-list">
+          <li>
+            <div class="course-row">
+              <span class="course-name">
+                ECON-GA 1023: Microeconomics I (PhD)
+              </span>
+
+              <div class="evaluation-links">
+                <a class="button evaluation-button" href="assets/evaluations/FA25.pdf" target="_blank" rel="noopener">
+                  Fall 2025
+                </a>
+
+                <a class="button evaluation-button" href="assets/evaluations/micro-spring-2026.pdf" target="_blank"
+                  rel="noopener">
+                  Fall 2026
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="tab-panel" id="personal">
+      <p>Coming soon.</p>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabButtons = document.querySelectorAll(".tab-button");
+        const tabPanels = document.querySelectorAll(".tab-panel");
+
+        tabButtons.forEach(function (button) {
+          button.addEventListener("click", function () {
+            const selectedTab = button.getAttribute("data-tab");
+
+            tabButtons.forEach(function (item) {
+              item.classList.remove("active");
+            });
+
+            tabPanels.forEach(function (panel) {
+              panel.classList.remove("active");
+            });
+
+            button.classList.add("active");
+
+            const selectedPanel = document.getElementById(selectedTab);
+
+            if (selectedPanel) {
+              selectedPanel.classList.add("active");
+            }
+          });
+        });
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".research-item").forEach(function (article) {
+        const button = article.querySelector(".research-toggle");
+        const abstract = article.querySelector(".research-extra");
+
+        if (!button || !abstract) {
+          return;
+        }
+
+        button.addEventListener("click", function () {
+          if (abstract.hidden) {
+            abstract.hidden = false;
+            button.textContent = "Hide abstract";
+          } else {
+            abstract.hidden = true;
+            button.textContent = "Show abstract";
+          }
+        });
+      });
+    </script>
+  </main>
 </body>
+
 </html>

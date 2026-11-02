@@ -1,0 +1,320 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
+
+body {
+    margin: 0;
+    background-color: #fce5cd;
+    color: #2b1b16;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.7;
+}
+
+.page {
+    width: min(820px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 70px;
+    align-items: start;
+}
+
+.intro-description {
+    margin: 0 0 18px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #980000;
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 0 0 5px;
+}
+
+.subtitle {
+    color: #000;
+    font-size: 18px;
+    font-weight: 750;
+    margin: 0 0 34px;
+}
+
+.tagline {
+    max-width: 590px;
+    margin: 0 0 32px;
+    font-size: 26px;
+    font-weight: 401;
+    line-height: 1.45;
+}
+
+.separator {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+.bio {
+    max-width: 590px;
+    margin: 0 0 32px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.contact-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 7px 0;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.text-icon {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  fill: none;
+  stroke: #980000;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.contact-line a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 13px;
+  border: 2px solid #980000;
+  border-radius: 5px;
+  background-color: #980000;
+  color: #fce5cd;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.button {
+  line-height: 1;
+  gap: 5px;
+}
+
+.button i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 13px;
+  height: 13px;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: #980000;
+}
+
+.profile-photo {
+    display: block;
+    width: 260px;
+    height: auto;
+    border: 4px solid #980000;
+    border-radius: 10px;
+}
+
+.tabs {
+  display: flex;
+  gap: 32px;
+  margin-top: 40px;
+  border-bottom: 1px solid rgba(152, 0, 0, 0.25);
+}
+
+.tab-button {
+  appearance: none;
+  position: relative;
+  padding: 10px 0;
+  border: 0;
+  background: none;
+  color: #2b1b16;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tab-button:hover {
+  color: #980000;
+}
+
+.tab-button.active {
+  color: #980000;
+}
+
+.tab-button.active::after {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 3px;
+  background-color: #980000;
+  content: "";
+}
+
+.tab-panel {
+  display: none;
+  padding-top: 16px;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.research-item {
+  padding: 4px 0 28px;
+  border-bottom: 1px solid rgba(152, 0, 0, 0.2);
+}
+
+.paper-title {
+  margin: 0 0 6px;
+  color: #2b1b16;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.paper-authors {
+  margin: 0 0 5px;
+  font-size: 15px;
+}
+
+.paper-authors a {
+  color: #980000;
+  text-decoration: none;
+}
+
+.paper-authors a:hover {
+  text-decoration: underline;
+}
+
+.paper-status {
+  margin: 0;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.paper-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px;
+  margin-top: 14px;
+}
+
+.research-extra {
+  margin-top: 18px;
+  padding-left: 16px;
+  border-left: 3px solid #980000;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.research-extra p {
+  margin: 0;
+}
+
+.teaching-item {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(152, 0, 0, 0.45);
+}
+
+.teaching-item:first-of-type {
+  padding-top: 4px;
+}
+
+.institution-name {
+  margin: 0 0 10px;
+  color: #2b1b16;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.course-list {
+  margin: 0;
+  padding-left: 21px;
+}
+
+.course-list li {
+  margin: 6px 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.course-list li::marker {
+  color: #980000;
+}
+
+.course-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.evaluation-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 7px;
+}
+
+@media (max-width: 700px) {
+    .page {
+        padding: 50px 0;
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .profile-photo {
+        width: 100%;
+        max-width: 240px;
+    }
+
+.course-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .evaluation-links {
+    justify-content: flex-start;
+  }
+}
